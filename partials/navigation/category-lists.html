@@ -1,0 +1,17 @@
+foreach $root do
+  if $children do
+    <ul class="portfolio-grid" id="portfolio-sidebar">
+      foreach $children do
+        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+          <img src="@thumb">
+          <a class="ajax-link" href="/@permalink">
+            <div class="grid-hover">
+                <h1>@title</h1>
+                <p>@category</p>
+            </div>
+            </a>
+        </li>
+      endforeach
+    </ul>
+  endif
+endforeach

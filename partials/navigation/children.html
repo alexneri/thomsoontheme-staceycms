@@ -1,0 +1,10 @@
+if $children do
+  <ul class="children">
+  foreach $children do
+      <li>
+        <a class="ajax-link" href="/@permalink">@page_name</a>
+        :children
+      </li>
+    endforeach
+  </ul>
+endif
